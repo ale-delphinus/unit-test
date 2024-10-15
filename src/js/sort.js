@@ -1,14 +1,14 @@
 function culcHealth(a, b) {
-    let result = 0;
-    if (a.health > b.health) {
-      result = -1;
-    } else if (a.health < b.health) {
-      result = 1;
-    }
-    return result;
+  let result = 0;
+  if (a.health > b.health) {
+    result = -1;
+  } if (a.health < b.health) {
+    result = 1;
   }
-  
-  export function sortArray(arr) {
-    arr.sort(culcHealth);
-    return arr;
-  }
+  return result;
+}
+
+export default function sortArray(arr) {
+  arr.sort(culcHealth);
+  return arr;
+}
